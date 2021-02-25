@@ -4,9 +4,10 @@ import {ExperienceBar} from '../component/ExperienceBar';
 import  Styles from '../Style/pages/Home.module.css';
 import {CompletedChallenges} from '../component/CompletedChallenges';
 import {CountDown} from '../component/CountDown';
+import {ChallengeBox} from '../component/ChallengeBox';
 import React from 'react';
 import Head from 'next/Head';
-
+  
 export default function Home() {
   return (
 
@@ -23,7 +24,7 @@ export default function Home() {
             <CountDown/>
         </div>
         <div>
- 
+            <ChallengeBox/>
         </div>
       </section>
     </div> 

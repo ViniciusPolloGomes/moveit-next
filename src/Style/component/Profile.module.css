@@ -1,12 +1,23 @@
 .profileContainer{
     display:flex;
     align-items: center;
+    
 }
 
 .profileContainer >img{
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 50%;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    border: 3px solid rgba(189,200,255,0.66);
+   
+}
+
+.profileContainer >img:hover{
+    filter: brightness(102%);
+   
 }
 
 .profileContainer > div{
@@ -17,14 +28,17 @@
     font-size: 1.5 rem;
     font-weight:600; 
     color: var(--title);
+    cursor:default;
  }
 
  .profileContainer div p{
     font-size: 1 rem;
     margin-top:0.5rem; 
+    cursor:default;
    
  }
 
  .profileContainer div div p img{
     margin-right: 0.5rem; 
+    
  }

@@ -8,15 +8,15 @@ import {ChallengeBox} from '../component/ChallengeBox';
 import React from 'react';
 import Head from 'next/Head';
 import { CountDownProvider } from '../contexts/CountDownContext';
+
   
 export default function Home() {
   return (
-
+    
     <div className={Styles.Container}>
       <Head>
         <title>Início | Move.it</title>
       </Head>
-      
       <ExperienceBar/>
       <CountDownProvider>
             <section>
@@ -29,7 +29,9 @@ export default function Home() {
                     <ChallengeBox/>
                 </div>
             </section>
-      </CountDownProvider>  
+            
+      </CountDownProvider> 
+      
     </div> 
   )
 }

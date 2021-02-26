@@ -61,7 +61,7 @@
     color:var(--title);
  }
 
- .CountDownButtonActive:not(:disabled)hoVer{
+ .CountDownButtonActive:not(:disabled):hoVer{
    background: var(--red);
    color: var(--white);
 }

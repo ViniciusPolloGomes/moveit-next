@@ -8,11 +8,22 @@ import {ChallengeBox} from '../component/ChallengeBox';
 import React from 'react';
 import Head from 'next/Head';
 import { CountDownProvider } from '../contexts/CountDownContext';
-
+import {GetServerSideProps} from 'next';
+import { ChallengesProvider } from '../contexts/ChallengesContext';
   
-export default function Home() {
+interface HomeProps{
+  level: number;
+  currentExperience: number;
+  challengesCompleted: number;
+}
+export default function Home(props: HomeProps) {
+
   return (
-    
+    <ChallengesProvider 
+      level={props.level}
+      currentExperience={props.currentExperience}
+      challengesCompleted={props.challengesCompleted}
+      >
     <div className={Styles.Container}>
       <Head>
         <title>Início | Move.it</title>
@@ -33,5 +44,24 @@ export default function Home() {
       </CountDownProvider> 
       
     </div> 
+    </ChallengesProvider>
   )
+}
+
+export const getServerSideProps: GetServerSideProps= async (ctx) => {
+    const user = {
+      level: 1 ,
+      currentExperience:50,
+      challengesCompleted:2,
+    }
+    
+    const {level,currentExperience,challengesCompleted}=  ctx.req.cookies;
+
+    return{
+      props:{
+        level: Number(level),
+        currentExperience :Number( currentExperience),
+        challengesCompleted: Number(challengesCompleted)
+      }
+    }
 }

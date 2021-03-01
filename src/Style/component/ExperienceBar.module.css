@@ -25,9 +25,43 @@ span.currentExperience{
     flex:1;
     height:4px;
     border-radius : 4px;
-    background: var(--gray-line);
+    background: var(--gray-line-dark);
     margin: 0 1.5rem;
     position:relative;
 }
 
+@media(max-width:768px){
 
+    span.currentExperience{
+        position:absolute;
+        top:6px;  
+        transform: translateX(-50%);
+    }
+    
+    .experienceBar >div >div{
+        height:4px;
+        border-radius: 4px;
+        background: var(--green);   
+    }
+     
+    .experienceBar{
+        display: flex;
+        align-items: center;   
+    }
+    
+    .experienceBar span{
+        font-size:1rem;
+        cursor:default; 
+    }
+    
+    .experienceBar > div{
+        font-size:1rem; 
+        flex:1;
+        height:4px;
+        border-radius : 4px;
+        background: var(--gray-line-dark);
+        margin: 0 0.5rem;
+        position:relative;
+    }
+
+}

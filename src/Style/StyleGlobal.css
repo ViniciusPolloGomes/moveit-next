@@ -36,7 +36,7 @@ body{
 }
 
 body{
-    background:var(--background);
+    background:var(--background-dark);
     color: var(--text);
 }
 
@@ -62,5 +62,22 @@ a {
     --green:#4cd62b;
     --blue: #5965e0;
     --blue-dark:#4953b8;
+    --blue-twitter:#2aa9e0; 
+}
+
+:root{
+    --fontwhite:#fff;
+    --background-dark: #121214;
+    --background-dark2: #17171a;
+    --background-dark2-5: #2a2a30;
+    --background-dark3:  #404047;
+    --gray-line-dark: #323238;
+    --text-dark:#a8a8b3;
+    --text-highlight-dark:#ebedff;
+    --title-dark: #e8e8f1;
+    --red-dark:#e83f5b;
+    --green-dark:#3ba81f;
+    --blue: #5965e0;
+    --blue-dark:#8992f5;
     --blue-twitter:#2aa9e0; 
 }

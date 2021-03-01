@@ -25,20 +25,67 @@
 }
 
 .profileContainer div strong{
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
     font-weight:600; 
-    color: var(--title);
+    color: var(--title-dark);
     cursor:default;
  }
 
  .profileContainer div p{
-    font-size: 1 rem;
+    font-size: 1rem;
     margin-top:0.5rem; 
     cursor:default;
    
  }
 
  .profileContainer div div p img{
-    margin-right: 0.5rem; 
+    margin-right: 1.5rem; 
     
  }
+
+ @media(max-width:768px){
+    .profileContainer{
+        display:flex;
+        align-items: center;
+        
+    }
+    
+    .profileContainer >img{
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        border-radius: 200px 200px 200px 200px;
+        -webkit-border-radius: 200px 200px 200px 200px;
+        -moz-border-radius: 200px 200px 200px 200px;
+        border: 3px solid rgba(189,200,255,0.66);
+    }
+    
+    .profileContainer >img:hover{
+        filter: brightness(102%);
+       
+    }
+    
+    .profileContainer > div{
+        margin-left:1.5rem;
+    }
+    
+    .profileContainer div strong{
+        font-size: 1rem;
+        font-weight:600; 
+        color: var(--title-dark);
+        cursor:default;
+     }
+    
+     .profileContainer div p{
+        font-size: 1rem;
+        margin-top:2px; 
+        cursor:default;
+       
+     }
+    
+     .profileContainer  div  div  p  img{
+        margin-right: 5px; 
+        padding-left: 5px;
+        
+     }
+}

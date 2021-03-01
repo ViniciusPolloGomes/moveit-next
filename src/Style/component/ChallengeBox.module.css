@@ -1,23 +1,21 @@
 .challengeBoxContainer{
-    height: 100%;
-    background: var(--white);
+    
     border-radius:5px;
-    -webkit-box-shadow: 2px 2px 15px 5px #b2b2b24f; 
-    box-shadow: 2px 2px 15px 5px #b2b2b233;
-    padding: 1.5rem 2rem;
-
+    
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content:center ;
-
     text-align: center;
+    background: var(--background-dark2-5);
+    
 }
 
 .challengeNotActive{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content:center;
 }
 
 .challengeNotActive strong{
@@ -25,6 +23,7 @@
     font-weight: 500;
     line-height: 1.4;
     cursor:default;  
+    margin-top: 15%;
 }
 
 .challengeNotActive p{
@@ -33,27 +32,30 @@
     align-items: center;
     line-height:1.4;
     max-width: 70%;
-    margin-top: 3rem;
+    margin-top: 15%;
     cursor:default;
+    margin-bottom:32%;
+    
 }
 
 .challengeNotActive p img{
-    margin-bottom: 1rem;
+    margin-bottom: 15%;
+    margin-top: 15%;
+    
 }
 
 .challengeActive{
     height:100%;
-
     display:flex;
     flex-direction: column;
 }
 
 .challengeActive header{
-    color: var(--blue);
+    color: var(--blue-dark);
     font-weight: 600;
     font-size: 1.25rem;
     padding:0 2rem 1.5rem;
-    border-bottom: 1px solid var(--gray-line);
+    border-bottom: 1px solid rgba(101, 96, 148, 0.8);
 }
 
 .challengeActive main{
@@ -62,19 +64,25 @@
     flex-direction: column;
     align-items: center;
     justify-content:center; 
+    margin-top: 15%;
+    
 }
 
 .challengeActive main strong{
     font-weight: 600;
     font-size: 2rem;
-    color: var(--title);
-    margin: 1.5rem 0 1rem;
+    color: var(--title-dark);
+    margin: 10% 0 1rem;
     cursor:default;
+    
+    
 }
 
 .challengeActive main p{
     line-height:1.5;
     cursor:default;
+    margin-top: 5%;
+    
 }
 
 
@@ -82,6 +90,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    margin-top: 15%;
+    margin-bottom: 5%;
 }
 
 .challengeActive footer button{
@@ -94,7 +104,7 @@
     border:0;
     border-radius:5px;
 
-    color: var(--white);
+    color: var(--text-highlight-dark);
 
     font-size:1rem;
     font-weight: 600;
@@ -108,9 +118,11 @@
 
 
 .challengeActive footer button.challengeSuceededButton{
-    background: var(--green);
+    background: var(--green-dark);
 }
 
 .challengeActive footer button:hover{
     filter:brightness(0.9);
 }
+
+ 

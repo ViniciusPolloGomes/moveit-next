@@ -8,13 +8,64 @@
 
     display:flex;
     flex-direction: column;
+    flex:1;
+    background: var(--background-dark2);
+
 }
 
 .Container section{
-    flex:1;
+    flex:1 1;
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    gap: 6.25rem;
+    gap: 1%;
     align-content: center;
+    flex-wrap: wrap;
+}
+
+.Container section > div{
+    flex:1;
+    margin:1%;
+    border-radius:5%;
+    background: var(--background-dark2-5);
+    padding: 5% 10%;
+}
+
+
+@media(max-width : 768px){
     
+    .Container{
+        height:100vh;
+        max-width:100%;
+        display:flex;
+
+        margin:0 0;
+        padding: 0.8rem 0.8rem;
+
+        display:flex;
+        flex-direction: column;
+        flex:1;
+    
+    }
+    
+    .Container section{
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        align-content: center;
+        flex-wrap: wrap;
+        max-width:100%;
+        flex:1 1 ;
+        margin-top: 10px;
+    }
+
+    .Container section div{
+        flex:1 1 ;
+    }
+    .div1{
+        margin: 2%;
+    }
+    .div2{
+        margin-top: 10%;
+        margin: 2%;
+    }
 }

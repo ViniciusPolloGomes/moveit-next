@@ -1,10 +1,11 @@
 .overlay{
-     background: rbga(242,243,245,0.8);
+     background:rgb(57, 81, 104) rbga(242,243,245,0.8);
      position:fixed;
      top:0;
      bottom:0;
      left:0;
      right:0;
+     
 
      display:flex;
      justify-content:center;
@@ -14,7 +15,7 @@
 }
 
 .container{
-    background: var(--white);
+    background: var(--background-dark2);
     width:100%;
     max-width:400px; 
     padding: 2rem 3rem;
@@ -22,27 +23,27 @@
     box-shadow:0 0 60px rbga(0 0 0 0.05);
     text-align:center;
     position: relative ;
-    box-shadow: 0px 4px 29px -8px rgba(0,0,0,0.70);
-    -webkit-box-shadow: 0px 4px 29px -8px rgba(0,0,0,0.70);
-    -moz-box-shadow: 0px 4px 29px -8px rgba(0,0,0,0.70);
+    box-shadow: 0px 4px 29px -8px rgba(0,0,0,0.80);
+    -webkit-box-shadow: 0px 4px 29px -8px rgba(0,0,0,0.80);
+    -moz-box-shadow: 0px 4px 29px -8px rgba(0,0,0,0.80);
 }
 
 .container header{
     font-size: 8.75rem;
     font-weight:600; 
-    color: var (--blue);
     background: url('/icons/levelup.svg') no-repeat center ;
     background-size: contain;
+    color:gold;
 }
 
 .container strong{
     font-size: 2.5rem;
-    color: var(--title);
+    color: gold;
 }
 
 .container p{
     font-size: 1.25rem;
-    color: var(--text);
+    color: rgb(112, 99, 35);
     margin-top: 0.25rem; 
 }
 
@@ -52,6 +53,68 @@
     top: 0.5rem;
     background: transparent;
     border: 0;
+    border-color: gold;
     font-size: 0;
+    color: gold;
 }
 
+@media(max-width: 768px){
+    .overlay{
+        background: transparent ;
+        position:fixed;
+        top:0px;
+        bottom:0px;
+        left: 10px;
+        right:10px;
+   
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        
+   
+   }
+   
+   .container{
+       background: var(--background-dark2);
+       width:100%;
+       max-width:400px; 
+       padding: 2rem 3rem;
+       border-radius: 5px;
+       box-shadow:0 0 60px rbga(0 0 0 0.05);
+       text-align:center;
+       position: relative ;
+       box-shadow: 0px 4px 29px -8px rgba(0, 0, 0, 0.8);
+       -webkit-box-shadow: 0px 4px 29px -8px rgba(0, 0, 0, 0.8);
+       -moz-box-shadow: 0px 4px 29px -8px rgba(0, 0, 0, 0.8);
+   }
+   
+   .container header{
+       font-size: 8.75rem;
+       font-weight:600; 
+       color: gold;
+       background: url('/icons/levelup.svg') no-repeat center ;
+       background-size: contain;
+   }
+   
+   .container strong{
+       font-size: 2.5rem;
+       color: gold;
+   }
+   
+   .container p{
+       font-size: 1.25rem;
+       color: rgb(112, 99, 35);
+       margin-top: 0.25rem; 
+   }
+   
+   .container button{
+       position: absolute;
+       right: 0.5rem;
+       top: 0.5rem;
+       background: transparent;
+       border: 0;
+       font-size: 0;
+       color: gold;
+    
+   }
+}

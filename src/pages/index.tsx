@@ -10,6 +10,7 @@ import Head from 'next/head';
 import { CountDownProvider } from '../contexts/CountDownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 import { GetServerSideProps } from 'next';
+import { SwitchButton } from '../component/SwitchButton';
 
 interface HomeProps{
   level: number;
@@ -28,6 +29,7 @@ export default function Home(props: HomeProps) {
       <Head>
         <title>Início | Move.it</title>
       </Head>
+      <SwitchButton></SwitchButton>
       <ExperienceBar/>
       <CountDownProvider>
             <section>

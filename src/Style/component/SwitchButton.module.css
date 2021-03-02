@@ -1,0 +1,22 @@
+
+
+.container{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+
+.container input{
+    display:none;
+}
+
+.container label{
+    cursor:pointer;
+    user-select: none;
+    border-radius:15%;
+    background: var(--background-dark3-5);
+    padding: 0.2rem;
+    color: var(--fontwhite);
+    
+}

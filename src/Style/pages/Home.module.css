@@ -25,7 +25,7 @@
 .Container section > div{
     flex:1;
     margin:1%;
-    border-radius:5%;
+    border-radius:2%;
     background: var(--background-dark2-5);
     padding: 5% 10%;
 }

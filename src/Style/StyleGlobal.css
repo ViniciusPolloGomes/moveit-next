@@ -52,8 +52,12 @@ a {
 }
 
 :root{
-    --white:#fff;
-    --background:#e3e7e9;
+    --fontwhite:#666;
+    --background-dark:#e3e7e9;
+    --background-dark2: #e3e7e9;
+    --background-dark2-5: #e0e2eb;
+    --background-dark3:  #fafafa;
+    --background-dark3-5:  #e0e2eb;
     --gray-line: #dcdde0;
     --text:#666;
     --text-highlight:#b3b9ff;
@@ -63,14 +67,17 @@ a {
     --blue: #5965e0;
     --blue-dark:#4953b8;
     --blue-twitter:#2aa9e0; 
+    --text-button-ligth: #fff;
+    
 }
 
-:root{
+.dark-mode:root{
     --fontwhite:#fff;
     --background-dark: #121214;
     --background-dark2: #17171a;
     --background-dark2-5: #2a2a30;
     --background-dark3:  #404047;
+    --background-dark3-5:  #2a2a30;
     --gray-line-dark: #323238;
     --text-dark:#a8a8b3;
     --text-highlight-dark:#ebedff;

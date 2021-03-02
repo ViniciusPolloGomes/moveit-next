@@ -138,7 +138,7 @@
      border-radius:5px;
      border:0;     
      background: var(--blue-dark);
-     color: var(--fontwhite);
+     color: var(--text-button-ligth);
      font-size: 1.25rem;
      font-weight: 600;
      transition: background-color 0.2s;
@@ -160,8 +160,8 @@
  }
   
  .CountDownButton:disabled{
-    background: var(--fontwhite);
-    color:var(--text-dark);
+    background: var(--text-button-ligth);
+    color:var(--text);
     cursor:not-allowed; 
  }
  

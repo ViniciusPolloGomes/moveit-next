@@ -104,7 +104,7 @@
     border:0;
     border-radius:5px;
 
-    color: var(--text-highlight-dark);
+    color: var(--text-button-ligth);
 
     font-size:1rem;
     font-weight: 600;
@@ -118,7 +118,7 @@
 
 
 .challengeActive footer button.challengeSuceededButton{
-    background: var(--green-dark);
+    background: var(--green);
 }
 
 .challengeActive footer button:hover{

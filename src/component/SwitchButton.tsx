@@ -18,7 +18,7 @@ export function SwitchButton(){
         <div className={Styles.container}>
             <input type="checkbox" name="SwitchButton" id="switch-button" onChange={handleDarkMode}/>
 
-            <label htmlFor="switch-button" >{isDarkModeEnabled?'Light Mode':'Dark Mode'}</label> 
+            <label htmlFor="switch-button" >Click and switch to dark template {isDarkModeEnabled?'Light Mode':'Dark Mode'}</label> 
         </div>
         
     );

@@ -12,6 +12,7 @@ import { ChallengesProvider } from '../contexts/ChallengesContext';
 import { GetServerSideProps } from 'next';
 import { SwitchButton } from '../component/SwitchButton';
 
+
 interface HomeProps{
   level: number;
   currentExperience: number;
